@@ -23,4 +23,10 @@ const Stats = ({followers, views, likes}) => (
 </StatBlock>
 );
 
+Stats.defaultProps = {
+  followers: 0,
+  views: 0,
+  likes: 0
+}
+
 export default Stats;
