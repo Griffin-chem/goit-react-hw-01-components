@@ -1,0 +1,40 @@
+.stats {
+  display: grid;
+  list-style: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #f3f6f9;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.stats li {
+  border: 1px solid gray;
+  padding-bottom: 16px;
+}
+
+.stats li:last-child {
+  border-bottom-right-radius: 5px;
+  
+}
+
+.stats li:first-child {
+  border-bottom-left-radius: 5px;
+}
+
+.label {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: #768696;
+  line-height: 20px;
+}
+
+.quantity {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #1f3349;
+  line-height: 20px;
+}

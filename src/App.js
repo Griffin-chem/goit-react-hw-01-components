@@ -1,8 +1,7 @@
 import React from 'react';
 import './App.css';
-import Profile from './social-profile/social-profile';
-import profileData from './social-profile/user.json';
-import './social-profile/social-profile.css';
+import Profile from './components/socialProfile/socialProfile';
+import profileData from './data/user.json';
 
 function App() {
   return (
