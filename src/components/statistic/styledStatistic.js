@@ -26,7 +26,7 @@ const StatList = styled.ul`
 
 const StatItem = styled.li`
   width: auto;
-  background-color: rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)});
+  background-color: #ff00ff;
 `;
 
 const Label = styled.span`
