@@ -13,8 +13,8 @@ const Statistic = ({ title, stats }) => (
   <StatisticBlock>
   {title && (<Title>{title}</Title>)}
   <StatList>
-    {stats.map(({label, percentage}) => (
-    <StatItem>
+    {stats.map(({label, percentage, id}) => (
+    <StatItem key = {id}>
       <Label>{label}</Label>
       <Percent>{percentage}%</Percent>
     </StatItem>
@@ -26,6 +26,8 @@ const Statistic = ({ title, stats }) => (
 Statistic.defaultProps = {
   title: ""
 };
+
+console.log(StatItem);
 
 Statistic.propTypes = {
   title: PropTypes.string,
