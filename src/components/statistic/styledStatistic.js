@@ -26,7 +26,7 @@ const StatList = styled.ul`
 
 const StatItem = styled.li`
   width: auto;
-  background-color: #2224ac;
+  background-color: ${props => props.bgcolor};
 `;
 
 const Label = styled.span`

@@ -9,12 +9,18 @@ import {
 } from './styledStatistic';
 import PropTypes from 'prop-types';
 
+const randomColor = function () {
+  return `rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`;
+}
+
+console.log(randomColor());
+
 const Statistic = ({ title, stats }) => (
   <StatisticBlock>
   {title && (<Title>{title}</Title>)}
   <StatList>
     {stats.map(({label, percentage, id}) => (
-    <StatItem key = {id}>
+    <StatItem key = {id} bgcolor = {randomColor()}>
       <Label>{label}</Label>
       <Percent>{percentage}%</Percent>
     </StatItem>
