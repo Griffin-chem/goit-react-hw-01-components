@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import {
   StatisticBlock,
   Title,
@@ -6,18 +8,17 @@ import {
   StatItem,
   Label,
   Percent
-} from './styledStatistic';
-import PropTypes from 'prop-types';
+} from './StyledStatistic';
 
 const randomColor = function () {
-  return `rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`;
+  return `rgb(${Math.floor(Math.random()*(256-180)+180)}, ${Math.floor(Math.random()*(256-180)+180)}, ${Math.floor(Math.random()*(256-180)+180)})`;
 }
 
-console.log(randomColor());
-
-const Statistic = ({ title, stats }) => (
+const Statistic = ({ title, stats }) => {
+  const isTitled = Boolean(title);
+  return (
   <StatisticBlock>
-  {title && (<Title>{title}</Title>)}
+  {isTitled && (<Title>{title}</Title>)}
   <StatList>
     {stats.map(({label, percentage, id}) => (
     <StatItem key = {id} bgcolor = {randomColor()}>
@@ -27,13 +28,11 @@ const Statistic = ({ title, stats }) => (
     ))}
   </StatList>
 </StatisticBlock>
-);
+)};
 
 Statistic.defaultProps = {
   title: ""
 };
-
-console.log(StatItem);
 
 Statistic.propTypes = {
   title: PropTypes.string,

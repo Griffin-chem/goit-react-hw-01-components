@@ -1,10 +1,11 @@
 import React from 'react';
+
 import {
   StatBlock,
   StatItem,
   Label,
   Quantity
-} from './styledStats';
+} from './StyledStats';
 
 const Stats = ({followers, views, likes}) => (
   <StatBlock>

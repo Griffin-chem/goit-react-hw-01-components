@@ -4,7 +4,7 @@ import {
   Status,
   Avatar,
   Name
-} from './styledFriendsListItem';
+} from './StyledFriendsListItem';
 
 const FriendsListItem = (({avatar, name, isOnline}) => (
     <Item isOnline = {isOnline}>

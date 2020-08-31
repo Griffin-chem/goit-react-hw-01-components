@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import {
   Table,
   THead,
   TRow
-} from './styledTransactionHistory';
+} from './StyledTransactionHistory';
 
 const TableHead = () => (
   <THead>

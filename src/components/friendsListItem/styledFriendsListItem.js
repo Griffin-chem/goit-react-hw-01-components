@@ -11,7 +11,7 @@ const Item = styled.li`
   align-items: center;
 
   &:hover {
-    box-shadow: 0px 3px 3px 2px ${props => (props.isOnline ? 'rgb(50, 255, 50)' : 'rgb(255, 50, 50)' )};
+    box-shadow: 0px 3px 3px 2px ${({ isOnline }) => (isOnline ? 'rgb(50, 255, 50)' : 'rgb(255, 50, 50)' )};
   }
 `;
 
@@ -20,7 +20,7 @@ const Status = styled.span`
   width: 10px;
   height: 10px;
   content: "";
-  background-color: ${props => (props.isOnline ? 'rgb(0, 255, 0)' : 'rgb(255, 0, 0)' )};
+  background-color: ${({ isOnline }) => (isOnline ? 'rgb(0, 255, 0)' : 'rgb(255, 0, 0)' )};
   border-radius: 50%;
   margin: 0 6px;
 `;

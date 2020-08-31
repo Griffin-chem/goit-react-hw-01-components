@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import {
   Wrapper, 
   Description, 
@@ -7,9 +9,8 @@ import {
   Tag,
   Location
 } 
-from './styledProfile';
-import Stats from '../stats/stats';
-import PropTypes from 'prop-types';
+from './StyledProfile';
+import Stats from '../Stats/Stats';
 
 const Profile = ({avatar, name, tag, location, stats}) => (
   <Wrapper>
