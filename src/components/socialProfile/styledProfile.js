@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Wrapper = styled.div`
-font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   width: 250px;
   margin: 0 auto;
   border-radius: 5px;
@@ -41,11 +41,4 @@ const Location = styled.p`
   line-height: 32px;
 `;
 
-export {
-  Wrapper, 
-  Description, 
-  Avatar, 
-  Name,
-  Tag,
-  Location
-}
+export { Wrapper, Description, Avatar, Name, Tag, Location };

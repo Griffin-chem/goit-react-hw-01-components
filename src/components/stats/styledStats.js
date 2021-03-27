@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const StatBlock = styled.ul`
   display: grid;
@@ -40,9 +40,4 @@ const Quantity = styled.span`
   line-height: 20px;
 `;
 
-export {
-  StatBlock,
-  StatItem,
-  Label,
-  Quantity
-}
+export { StatBlock, StatItem, Label, Quantity };

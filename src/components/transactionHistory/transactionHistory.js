@@ -1,11 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import {
-  Table,
-  THead,
-  TRow
-} from './StyledTransactionHistory';
+import { Table, THead, TRow } from "./StyledTransactionHistory";
 
 const TableHead = () => (
   <THead>
@@ -17,22 +13,22 @@ const TableHead = () => (
   </THead>
 );
 
-const TableBody = ({items}) => (
+const TableBody = ({ items }) => (
   <tbody>
-    {items.map(({id, type, amount, currency}) => (
-    <TRow key = {id}>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
-    </TRow>
+    {items.map(({ id, type, amount, currency }) => (
+      <TRow key={id}>
+        <td>{type}</td>
+        <td>{amount}</td>
+        <td>{currency}</td>
+      </TRow>
     ))}
   </tbody>
-)
+);
 
-const Transactions = ({items}) => (
+const Transactions = ({ items }) => (
   <Table>
     <TableHead></TableHead>
-    <TableBody items = {items}></TableBody>
+    <TableBody items={items}></TableBody>
   </Table>
 );
 
@@ -42,8 +38,9 @@ Transactions.propTypes = {
       id: PropTypes.string.isRequired,
       type: PropTypes.string.isRequired,
       amount: PropTypes.string.isRequired,
-      currency: PropTypes.string.isRequired
-    })).isRequired
-}
+      currency: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
 
-export {Transactions}
+export { Transactions };

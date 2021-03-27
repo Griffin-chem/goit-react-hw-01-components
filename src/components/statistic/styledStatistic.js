@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const StatisticBlock = styled.section`
   width: 270px;
@@ -26,7 +26,7 @@ const StatList = styled.ul`
 
 const StatItem = styled.li`
   width: auto;
-  background-color: ${props => props.bgcolor};
+  background-color: ${(props) => props.bgcolor};
 `;
 
 const Label = styled.span`
@@ -45,11 +45,4 @@ const Percent = styled.span`
   color: #ffffff;
 `;
 
-export {
-  StatisticBlock,
-  Title,
-  StatList,
-  StatItem,
-  Label,
-  Percent
-}
+export { StatisticBlock, Title, StatList, StatItem, Label, Percent };

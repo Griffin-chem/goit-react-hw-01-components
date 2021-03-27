@@ -1,9 +1,9 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Table = styled.table`
   width: 500px;
   margin: 0 auto;
-  box-shadow: 0px 3px 3px 2px #aaaaaa
+  box-shadow: 0px 3px 3px 2px #aaaaaa;
 `;
 
 const THead = styled.thead`
@@ -28,8 +28,4 @@ const TRow = styled.tr`
   }
 `;
 
-export {
-  Table,
-  THead,
-  TRow
-}
+export { Table, THead, TRow };
